@@ -1480,5 +1480,19 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(200, 'ptmx_fops', '0xc12532a0');
   INSERT INTO device_address(device_id, name, value) VALUES(200, 'remap_pfn_range', '0xc0251abc');
   INSERT INTO device_address(device_id, name, value) VALUES(200, 'vmalloc_exec', '0xc025f168');
-
+ 
+INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(198, 'SBM303SH', 'S0018', NULL, NULL);
+  INSERT INTO device_address(device_id, name, value) VALUES(198, 'kernel_physical_offset', '0x80208000');
+  INSERT INTO device_address(device_id, name, value) VALUES(198, 'prepare_kernel_cred', '0xc01a4988');
+  INSERT INTO device_address(device_id, name, value) VALUES(198, 'commit_creds', '0xc01a44b4');
+  INSERT INTO device_address(device_id, name, value) VALUES(198, 'remap_pfn_range', '0xc021d2b4');
+  INSERT INTO device_address(device_id, name, value) VALUES(198, 'vmalloc_exec', '0xc0229b08');
+  #INSERT INTO device_address(device_id, name, value) VALUES(198, 'ptmx_fops', '0xC102F220');
+  #INSERT INTO device_address(device_id, name, value) VALUES(198, 'msm_acdb.value_pos', 124);
+  #INSERT INTO device_address(device_id, name, value) VALUES(198, 'msm_acdb.address_pos', 136);
+  #INSERT INTO device_address(device_id, name, value) VALUES(198, 'msm_acdb.pc1.pos', 140);
+  #INSERT INTO device_address(device_id, name, value) VALUES(198, 'msm_acdb.pc1.value', '0xc0247500');
+  #INSERT INTO device_address(device_id, name, value) VALUES(198, 'msm_acdb.pc2.pos', 172);
+  #INSERT INTO device_address(device_id, name, value) VALUES(198, 'msm_acdb.pc2.value', '0xc0230ab0');
+  
 COMMIT;
